@@ -1,0 +1,66 @@
+/* Small custom utilities used by components */
+:root {
+  --accent: #111827; /* black */
+  --muted: #6b7280;
+}
+.container-max {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  background: #f3f4f6;
+  color: #374151;
+}
+.tag-dark {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  background: #000;
+  color: #fff;
+}
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #000;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+
+/* Global reset + system font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #111827;
+  --muted: #6b7280;
+}
+
+html, body, #__next { height: 100%; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--accent);
+  background: #fff;
+}
+
+/* keep layout-related global rules minimal. Main styling lives in src/styles/main.scss */
