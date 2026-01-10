@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "author": "Godwin DIckson",
   "license": "MIT",
