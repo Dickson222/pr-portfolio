@@ -5,7 +5,7 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 import { useTheme } from '../contexts/ThemeContext';
 
 export default function ThemeToggle() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme() as { theme: 'light' | 'dark'; toggleTheme: () => void };
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
